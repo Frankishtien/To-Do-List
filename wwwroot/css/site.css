@@ -1,0 +1,123 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0f0f0; 
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-size: 18px;
+}
+
+h1 {
+  color: #555;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+h1:hover {
+  color: #e63622;
+  transform: translateY(-8px);
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+
+.task-list:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin: 5px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+
+}
+
+.task-item.completed span.task-text {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.task-text {
+  flex-grow: 1;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.task-item:hover {
+  background-color: #f9f9f9;
+  transform: translateY(-3px);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+input[type="text"]:focus {
+  border-color: #e63622;
+  box-shadow: 0 0 12px #e63622;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #e63622;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #d12e1a;
+  transform: translateY(-3px);
+}
+
+.navbar{
+  display: none;
+}
+
+footer{
+  display: none;
+}
